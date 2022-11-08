@@ -1,0 +1,26 @@
+{
+  "name": "automacaoleitura",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "test": "npx cypress open",
+    "cy:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Webertonrs/automacaoLeitura.git"
+  },
+  "author": "weberton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Webertonrs/automacaoLeitura/issues"
+  },
+  "homepage": "https://github.com/Webertonrs/automacaoLeitura#readme",
+  "devDependencies": {
+    "cypress": "^10.11.0"
+  }
+}
