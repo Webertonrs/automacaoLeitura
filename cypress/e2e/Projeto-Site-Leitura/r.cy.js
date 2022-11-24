@@ -1,11 +1,14 @@
+// require register e menu
 describe('Validar campos obrigatório', () => {
 
     beforeEach(() => {
-        cy.visit('https://leitura.com.br/index.php?route=account/register')
+        cy.visit('/index.php?route=account/register')
 
     })
 
     it('campo  obrigatótio', () => {
+                // cy.get(pomenus.linkMinhaConta).click();
+        // cy.get('.dropdown-menu > :nth-child(1) > a').click();
         cy.get('[type="checkbox"]').click();
         cy.get('.pull-right > .btn').click();
         cy.contains(':nth-child(3) > .col-sm-10 > .text-danger', 'O nome deve ter entre 1 e 32 caracteres').should('be.visible');
